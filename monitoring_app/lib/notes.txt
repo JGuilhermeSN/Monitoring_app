@@ -1,0 +1,5 @@
+
+notas gerais - controle de adições
+
+- adicionado sistema de usuario (cadastro, login)
+- sistema de CRUD, com adiçao de individuos bovinos 

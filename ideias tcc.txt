@@ -1,0 +1,14 @@
+
+_________________________________________Aplicativo de monitoramento de rebanho_________________________________________
+
+	A ideia da aplicação é fazer um controle e monitoramento dinamico do rebanho, fazendo uma adição de cada individuo juntamente com as medidas e caracteristicas observadas no rebanho de corte. (peso, alimentação, valor do dolar, valor do @)
+
+_____sequencia de telas iniciais =
+
+*CADASTRO/LOGIN -
+
+*MENU INICIAL - novidades sobre os assuntos = valor do dolar, valor do @, grafico comparativo etc.
+
+*BALANÇO DO REBANHO - grafico com media de peso, idade, comparando com peso ideal
+
+	*VISUALIZAÇÃO INDIVIDUAL - cada inidividuo tem um codigo unico (numeração) - com peso, idade, e previsão de venda 										   	     com valores variados de acordo com o 										    	     dolar 
