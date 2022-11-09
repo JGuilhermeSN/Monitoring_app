@@ -1,5 +1,12 @@
 
-notas gerais - controle de adições
+Notas gerais - controle de adições
 
 - adicionado sistema de usuario (cadastro, login)
 - sistema de CRUD, com adiçao de individuos bovinos 
+
+
+
+Coisas a fazer:
+
+- adicionar sistema de imagem para o crud
+entregar o codigo no ava
