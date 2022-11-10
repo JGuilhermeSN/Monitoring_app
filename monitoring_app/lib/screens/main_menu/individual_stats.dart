@@ -48,6 +48,7 @@ class IndividuaStatistics extends StatelessWidget {
                                             color: AppColors.primaryAuxiliary,
                                             fontSize: 16),
                                       ),
+                                      // printa os dados presentes no campo especificado do banco de dados
                                       Text(docSnapshot['gender'],
                                           style: TextStyle(
                                               fontSize: 16.5,

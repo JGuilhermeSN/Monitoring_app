@@ -25,12 +25,6 @@ class _BottonNavBarState extends State<Homepage> {
     pageList.add(const PerfilScreen());
     super.initState();
   }
-  /*
-  pageList.add(const Homepage()); // adição da homepage
-    pageList.add(const GeneralStatistics());
-    pageList.add(const IndividuaStatistics());
-    pageList.add(const PerfilScreen());
-  */
 
   @override
   Widget build(BuildContext context) {
@@ -48,17 +42,13 @@ class _BottonNavBarState extends State<Homepage> {
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.attach_money_rounded), label: "Novidades"),
+              icon: Icon(Icons.attach_money_rounded), label: "Inicio"),
           BottomNavigationBarItem(
               icon: Icon(Icons.bar_chart), label: "Balanço"),
           BottomNavigationBarItem(
               icon: Icon(Icons.show_chart), label: "Individuos"),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle), label: "Perfil"), // perfil
-          // BottomNavigationBarItem(icon: Icon(Icons.content_paste)),
-          // BottomNavigationBarItem(icon: Icon(Icons.article_outlined)),
-          // BottomNavigationBarItem(icon: Icon(Icons.analytics_outlined)),
-          // BottomNavigationBarItem(icon: Icon(Icons.assessment_outlined)),
         ],
       ),
     );

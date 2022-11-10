@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:monitoring_app/models/individual_data/individual_data.dart';
+// import 'package:monitoring_app/models/users/user.dart';
 
 class DataServices {
   //obtendo instancia do firebase
@@ -27,6 +28,7 @@ class DataServices {
     }
   }
 
+  // metodo de exclusao dos dados cadastrados
   Future<bool> delete(String individualId) async {
     try {
       await firestoreRef.doc(individualId).delete();
@@ -40,4 +42,7 @@ class DataServices {
       return Future.value(false);
     }
   }
+
+  // Nota: adicionar o metodo de alteraçao de dados do crud
+
 }

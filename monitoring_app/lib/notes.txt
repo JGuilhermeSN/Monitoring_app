@@ -1,12 +1,23 @@
 
-Notas gerais - controle de adições
+---> Notas gerais - controle de adições
 
 - adicionado sistema de usuario (cadastro, login)
 - sistema de CRUD, com adiçao de individuos bovinos 
 
 
 
-Coisas a fazer:
+---> Coisas a fazer:
 
 - adicionar sistema de imagem para o crud
 entregar o codigo no ava
+
+
+
+---> Ideias:
+
+- criar uma tela onde esta irá pegar informaçoes de peso do firebase e usar para fazer um comparativo de preço com base no preço do arroba
+rascunho:
+[
+    appbar mostrando o valor dado do @;
+    streamlist mostrando todos os animais cadastrados juntamente com o preço estimado baseado pelo preço
+]

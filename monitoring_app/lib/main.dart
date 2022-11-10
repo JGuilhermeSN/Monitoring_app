@@ -5,6 +5,7 @@ import 'package:monitoring_app/screens/login_pages/signup_screen.dart';
 import 'package:monitoring_app/screens/main_menu/add_individual.dart';
 import 'package:monitoring_app/screens/main_menu/control_bottonnavigationbar.dart';
 import 'package:monitoring_app/screens/main_menu/general_stats.dart';
+import 'package:monitoring_app/screens/main_menu/homepage_screen.dart';
 import 'package:monitoring_app/screens/main_menu/individual_stats.dart';
 import 'package:monitoring_app/screens/perfil/perfil_screen.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         '/Signin': (context) => const SigninScreen(),
         '/Signup': (context) => const SignupScreen(),
         '/Homepage': (context) => const Homepage(),
-        '/HomepageScreen': (context) => const Homepage(),
+        '/HomepageScreen': (context) => HomepageScreen(),
         '/GeneralStats': (context) => const GeneralStatistics(),
         '/IndividualStats': (context) => const IndividuaStatistics(),
         '/PerfilScreen': (context) => const PerfilScreen(),

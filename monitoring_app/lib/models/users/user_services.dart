@@ -28,17 +28,6 @@ class UserServices {
     this.localUser = localUser;
     saveData();
   }
-/*
-  // Metodo de autenticação do usuario
-  Future<void> signIn(LocalUser localUser) async {
-    User? user = (await _auth.signInWithEmailAndPassword(
-      email: localUser.email!,
-      password: localUser.password!,
-    ))
-        .user;
-    localUser.id = user!.uid;
-    this.localUser = localUser;
-  }*/
 
   // Metodo de login usando firebase exceptions
   Future<bool> signIn(LocalUser localUser) async {
@@ -60,26 +49,6 @@ class UserServices {
       return Future.value(false);
     }
   }
-
-/*
-  // Metodo de registro com chamadas de exceptions do firebase
-  //
-  register(LocalUser localUser) async {
-    try {
-      User? user = (await _auth.createUserWithEmailAndPassword(
-              email: localUser.email!, password: localUser.password!))
-          .user;
-      localUser.id = user!.uid;
-      this.localUser = localUser;
-    } on FirebaseAuthException catch (e) {
-      if (e.code == 'weak-password') {
-        throw AuthException('A senha é muito fraca');
-      } else if (e.code == 'email-already-in-user') {
-        throw AuthException('Email ja cadastrado');
-      }
-    }
-  }
-*/
 
   Future<void> saveData() async {
     await firestoreRef.set(localUser!.toMap());
