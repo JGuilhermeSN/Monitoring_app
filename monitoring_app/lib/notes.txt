@@ -20,4 +20,5 @@ rascunho:
 [
     appbar mostrando o valor dado do @;
     streamlist mostrando todos os animais cadastrados juntamente com o preço estimado baseado pelo preço
+    - adicionar metodo de numeraçao dos individuos para ter identificaçao
 ]

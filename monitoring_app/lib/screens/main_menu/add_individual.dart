@@ -14,9 +14,7 @@ class AddIndividualScreen extends StatefulWidget {
 
 class _AddIndividualScreenState extends State<AddIndividualScreen> {
   final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
-
   final IndividualInformation _individualInfo = IndividualInformation();
-
   final DataServices _dataServices = DataServices();
 
   @override

@@ -28,7 +28,8 @@ class IndividuaStatistics extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.only(top: 8),
                   child: Card(
-                    color: AppColors.secondary,
+                    elevation: 3,
+                    color: AppColors.primary,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
@@ -45,50 +46,50 @@ class IndividuaStatistics extends StatelessWidget {
                                       Text(
                                         'Gênero: \t',
                                         style: TextStyle(
-                                            color: AppColors.primaryAuxiliary,
+                                            color: AppColors.background,
                                             fontSize: 16),
                                       ),
                                       // printa os dados presentes no campo especificado do banco de dados
                                       Text(docSnapshot['gender'],
                                           style: TextStyle(
                                               fontSize: 16.5,
-                                              color: AppColors.primary))
+                                              color: AppColors.emphasys))
                                     ]),
                                     Row(children: [
                                       Text(
                                         'Raça: \t',
                                         style: TextStyle(
-                                            color: AppColors.primaryAuxiliary,
+                                            color: AppColors.background,
                                             fontSize: 16),
                                       ),
                                       Text(docSnapshot['breed'],
                                           style: TextStyle(
                                               fontSize: 16.5,
-                                              color: AppColors.primary))
+                                              color: AppColors.emphasys))
                                     ]),
                                     Row(children: [
                                       Text(
                                         'Peso (Kg): \t',
                                         style: TextStyle(
-                                            color: AppColors.primaryAuxiliary,
+                                            color: AppColors.background,
                                             fontSize: 16),
                                       ),
                                       Text(docSnapshot['weight'],
                                           style: TextStyle(
                                               fontSize: 16.5,
-                                              color: AppColors.primary)),
+                                              color: AppColors.emphasys)),
                                     ]),
                                     Row(children: [
                                       Text(
                                         'Coloração: \t',
                                         style: TextStyle(
-                                            color: AppColors.primaryAuxiliary,
+                                            color: AppColors.background,
                                             fontSize: 16),
                                       ),
                                       Text(docSnapshot['color'],
                                           style: TextStyle(
                                               fontSize: 16.5,
-                                              color: AppColors.primary)),
+                                              color: AppColors.emphasys)),
                                     ]),
                                   ],
                                 ),
@@ -97,7 +98,7 @@ class IndividuaStatistics extends StatelessWidget {
                                 onPressed: () {},
                                 icon: Icon(
                                   Icons.edit,
-                                  color: AppColors.primary,
+                                  color: AppColors.background,
                                 ),
                               ),
                               IconButton(

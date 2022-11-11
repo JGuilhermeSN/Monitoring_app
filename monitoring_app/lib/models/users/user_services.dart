@@ -10,11 +10,15 @@ class AuthException implements Exception {
 class UserServices {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
+  late CollectionReference userFirestoreRef;
   // metodo get para obter referencia da coleçao de users
   DocumentReference get firestoreRef =>
       _firestore.doc('users/${localUser!.id}');
 
+  // metodo construtor utilizado de referencia para a coleçao user no firebase
+  UserServices() {
+    userFirestoreRef = _firestore.collection('users');
+  }
   // variavel de instancia do usuario local
   LocalUser? localUser;
 
