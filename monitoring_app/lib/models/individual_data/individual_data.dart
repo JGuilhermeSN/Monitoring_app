@@ -11,11 +11,7 @@ class IndividualInformation {
 
   // construtor
   IndividualInformation(
-      {this.id,
-      this.gender,
-      this.weight,
-      this.breed,
-      this.color});
+      {this.id, this.gender, this.weight, this.breed, this.color});
 
   // metodo de armazenamento dos dados do documento obtido no firebase
   IndividualInformation.fromDocument(DocumentSnapshot doc) {

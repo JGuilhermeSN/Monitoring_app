@@ -1,7 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:monitoring_app/components/app_buttons.dart';
 import 'package:monitoring_app/components/app_colors.dart';
+import 'package:monitoring_app/models/users/user.dart';
 import 'package:monitoring_app/models/users/user_services.dart';
+import 'package:monitoring_app/screens/login_pages/signin_screen.dart';
 
 class PerfilScreen extends StatefulWidget {
   const PerfilScreen({Key? key}) : super(key: key);
@@ -10,6 +13,9 @@ class PerfilScreen extends StatefulWidget {
   State<PerfilScreen> createState() => _PerfilScreenState();
 }
 
+/*
+  tela ainda nao esta funcionado como deveria, adicionar o esquema de retornar usuario logado para mostrar as informaçoes corretas
+*/
 class _PerfilScreenState extends State<PerfilScreen> {
   @override
   Widget build(BuildContext context) {
@@ -124,7 +130,22 @@ class _PerfilScreenState extends State<PerfilScreen> {
                           },
                         );
                       }),
-                  const SizedBox(height: 70)
+                  const SizedBox(height: 20),
+                  OutlinedButton(
+                      style: AppButtons.logoutButtonStyle,
+                      onPressed: () {
+                        userServices.logout();
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SigninScreen()));
+                      },
+                      child: const Text('Sair')),
+                  const SizedBox(height: 30),
+                  const Text(
+                    'by José Guilherme',
+                    style: TextStyle(fontWeight: FontWeight.w200, fontSize: 14),
+                  )
                 ],
               ),
             ),

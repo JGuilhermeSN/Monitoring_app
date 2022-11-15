@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:monitoring_app/components/app_colors.dart';
 import 'package:monitoring_app/screens/main_menu/general_stats.dart';
-import 'package:monitoring_app/screens/main_menu/homepage_screen.dart';
+import 'package:monitoring_app/screens/home/homepage_screen.dart';
 import 'package:monitoring_app/screens/main_menu/individual_stats.dart';
 import 'package:monitoring_app/screens/perfil/perfil_screen.dart';
 
@@ -18,7 +18,7 @@ class _BottonNavBarState extends State<Homepage> {
   @override
   void initState() {
     _currentIndex = 0;
-    // adição da homepage - outras paginas do bottonnavigation
+    // controle de telas outras paginas do bottonnavigation
     pageList.add(const HomepageScreen());
     pageList.add(const GeneralStatistics());
     pageList.add(const IndividuaStatistics());

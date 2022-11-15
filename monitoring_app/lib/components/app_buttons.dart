@@ -28,4 +28,10 @@ class AppButtons {
       fontSize: 15.5,
     ),
   );
+
+  static final logoutButtonStyle = OutlinedButton.styleFrom(
+    foregroundColor: AppColors.red,
+    side: BorderSide(color: AppColors.red),
+    textStyle: const TextStyle(fontSize: 16),
+  );
 }

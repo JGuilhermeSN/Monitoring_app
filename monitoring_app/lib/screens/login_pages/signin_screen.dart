@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:monitoring_app/components/app_buttons.dart';
 import 'package:monitoring_app/components/app_colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:monitoring_app/screens/main_menu/control_bottonnavigationbar.dart';
+import 'package:monitoring_app/screens/home/control_bottonnavigationbar.dart';
 import 'package:monitoring_app/models/users/user.dart';
 import 'package:monitoring_app/models/users/user_services.dart';
 

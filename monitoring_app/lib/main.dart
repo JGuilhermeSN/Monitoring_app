@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:monitoring_app/screens/login_pages/signin_screen.dart';
 import 'package:monitoring_app/screens/login_pages/signup_screen.dart';
 import 'package:monitoring_app/screens/main_menu/add_individual.dart';
-import 'package:monitoring_app/screens/main_menu/control_bottonnavigationbar.dart';
+import 'package:monitoring_app/screens/home/control_bottonnavigationbar.dart';
 import 'package:monitoring_app/screens/main_menu/general_stats.dart';
-import 'package:monitoring_app/screens/main_menu/homepage_screen.dart';
+import 'package:monitoring_app/screens/home/homepage_screen.dart';
 import 'package:monitoring_app/screens/main_menu/individual_stats.dart';
 import 'package:monitoring_app/screens/perfil/perfil_screen.dart';
 

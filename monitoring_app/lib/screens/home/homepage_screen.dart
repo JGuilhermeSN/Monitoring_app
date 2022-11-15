@@ -6,14 +6,20 @@ import 'package:monitoring_app/models/individual_data/data_services.dart';
 
 class HomepageScreen extends StatelessWidget {
   const HomepageScreen({Key? key}) : super(key: key);
-
+/*
+  --lembrete:
+  objetivo da tela: mostrar os valores do arroba e talvez do dolar
+  pegar esses valores e printar uma lista dos individuos conforme cotaçao x peso
+  organizar do maior para menor
+  há pensar: como melhorar o layout de amostragem dos dados 
+*/
   @override
   Widget build(BuildContext context) {
-    DataServices _dataServices = DataServices();
+    DataServices dataServices = DataServices();
     return Scaffold(
       appBar: appbaritem('Valores'),
       body: StreamBuilder(
-          stream: _dataServices.firestoreRef.snapshots(),
+          stream: dataServices.firestoreRef.snapshots(),
           builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
             if (snapshot.hasData) {
               return ListView.builder(
